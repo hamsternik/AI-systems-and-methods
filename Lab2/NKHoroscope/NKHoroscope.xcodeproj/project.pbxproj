@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		622445611D95B7F300E0E87F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622445601D95B7F300E0E87F /* AppDelegate.swift */; };
+		622445631D95B7F300E0E87F /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622445621D95B7F300E0E87F /* RegistrationVC.swift */; };
+		622445661D95B7F300E0E87F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622445641D95B7F300E0E87F /* Main.storyboard */; };
+		622445681D95B7F300E0E87F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622445671D95B7F300E0E87F /* Assets.xcassets */; };
+		6224456B1D95B7F300E0E87F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622445691D95B7F300E0E87F /* LaunchScreen.storyboard */; };
+		622445751D95C9ED00E0E87F /* AgeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622445741D95C9ED00E0E87F /* AgeScreenVC.swift */; };
+		622445771D95CA1000E0E87F /* HoroscopeSignInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622445761D95CA1000E0E87F /* HoroscopeSignInfoVC.swift */; };
+		62D8ABB01D95F88C00B95C3D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8ABAF1D95F88C00B95C3D /* Person.swift */; };
+		62D8ABB41D96032A00B95C3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D8ABB31D96032A00B95C3D /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6224455D1D95B7F300E0E87F /* NKHoroscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NKHoroscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		622445601D95B7F300E0E87F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		622445621D95B7F300E0E87F /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
+		622445651D95B7F300E0E87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		622445671D95B7F300E0E87F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6224456A1D95B7F300E0E87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6224456C1D95B7F300E0E87F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		622445741D95C9ED00E0E87F /* AgeScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeScreenVC.swift; sourceTree = "<group>"; };
+		622445761D95CA1000E0E87F /* HoroscopeSignInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoroscopeSignInfoVC.swift; sourceTree = "<group>"; };
+		62D8ABAF1D95F88C00B95C3D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		62D8ABB31D96032A00B95C3D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6224455A1D95B7F300E0E87F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D8ABB41D96032A00B95C3D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		622445541D95B7F300E0E87F = {
+			isa = PBXGroup;
+			children = (
+				6224455F1D95B7F300E0E87F /* NKHoroscope */,
+				62D8ABB71D96388700B95C3D /* Frameworks */,
+				6224455E1D95B7F300E0E87F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6224455E1D95B7F300E0E87F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6224455D1D95B7F300E0E87F /* NKHoroscope.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6224455F1D95B7F300E0E87F /* NKHoroscope */ = {
+			isa = PBXGroup;
+			children = (
+				622445601D95B7F300E0E87F /* AppDelegate.swift */,
+				622445731D95BF5600E0E87F /* Sources */,
+				622445721D95BF4B00E0E87F /* Resources */,
+			);
+			path = NKHoroscope;
+			sourceTree = "<group>";
+		};
+		622445721D95BF4B00E0E87F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				622445641D95B7F300E0E87F /* Main.storyboard */,
+				622445671D95B7F300E0E87F /* Assets.xcassets */,
+				622445691D95B7F300E0E87F /* LaunchScreen.storyboard */,
+				6224456C1D95B7F300E0E87F /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		622445731D95BF5600E0E87F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				622445621D95B7F300E0E87F /* RegistrationVC.swift */,
+				622445741D95C9ED00E0E87F /* AgeScreenVC.swift */,
+				622445761D95CA1000E0E87F /* HoroscopeSignInfoVC.swift */,
+				62D8ABB81D96389E00B95C3D /* Model */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		62D8ABB71D96388700B95C3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62D8ABB31D96032A00B95C3D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62D8ABB81D96389E00B95C3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62D8ABAF1D95F88C00B95C3D /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6224455C1D95B7F300E0E87F /* NKHoroscope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6224456F1D95B7F300E0E87F /* Build configuration list for PBXNativeTarget "NKHoroscope" */;
+			buildPhases = (
+				622445591D95B7F300E0E87F /* Sources */,
+				6224455A1D95B7F300E0E87F /* Frameworks */,
+				6224455B1D95B7F300E0E87F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NKHoroscope;
+			productName = NKHoroscope;
+			productReference = 6224455D1D95B7F300E0E87F /* NKHoroscope.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		622445551D95B7F300E0E87F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = cybervisiontech;
+				TargetAttributes = {
+					6224455C1D95B7F300E0E87F = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = C5B4S79D6V;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 622445581D95B7F300E0E87F /* Build configuration list for PBXProject "NKHoroscope" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 622445541D95B7F300E0E87F;
+			productRefGroup = 6224455E1D95B7F300E0E87F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6224455C1D95B7F300E0E87F /* NKHoroscope */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6224455B1D95B7F300E0E87F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6224456B1D95B7F300E0E87F /* LaunchScreen.storyboard in Resources */,
+				622445681D95B7F300E0E87F /* Assets.xcassets in Resources */,
+				622445661D95B7F300E0E87F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		622445591D95B7F300E0E87F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D8ABB01D95F88C00B95C3D /* Person.swift in Sources */,
+				622445771D95CA1000E0E87F /* HoroscopeSignInfoVC.swift in Sources */,
+				622445751D95C9ED00E0E87F /* AgeScreenVC.swift in Sources */,
+				622445631D95B7F300E0E87F /* RegistrationVC.swift in Sources */,
+				622445611D95B7F300E0E87F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		622445641D95B7F300E0E87F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				622445651D95B7F300E0E87F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		622445691D95B7F300E0E87F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6224456A1D95B7F300E0E87F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6224456D1D95B7F300E0E87F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6224456E1D95B7F300E0E87F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		622445701D95B7F300E0E87F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C5B4S79D6V;
+				INFOPLIST_FILE = NKHoroscope/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuvogroup.NKHoroscope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		622445711D95B7F300E0E87F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C5B4S79D6V;
+				INFOPLIST_FILE = NKHoroscope/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuvogroup.NKHoroscope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		622445581D95B7F300E0E87F /* Build configuration list for PBXProject "NKHoroscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6224456D1D95B7F300E0E87F /* Debug */,
+				6224456E1D95B7F300E0E87F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6224456F1D95B7F300E0E87F /* Build configuration list for PBXNativeTarget "NKHoroscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622445701D95B7F300E0E87F /* Debug */,
+				622445711D95B7F300E0E87F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 622445551D95B7F300E0E87F /* Project object */;
+}
