@@ -1,0 +1,8 @@
+
+target 'AIChatBot' do
+  use_frameworks!
+
+  # Pods for AIChatBot
+  pod 'JSQMessagesViewController', :git => 'https://github.com/jessesquires/JSQMessagesViewController.git', :branch => 'develop'
+
+end
