@@ -30,139 +30,22 @@ class ViewController: JSQMessagesViewController {
         collectionView?.collectionViewLayout.incomingAvatarViewSize = CGSize(width: kJSQMessagesCollectionViewAvatarSizeDefault, height:kJSQMessagesCollectionViewAvatarSizeDefault )
         collectionView?.collectionViewLayout.outgoingAvatarViewSize = CGSize(width: kJSQMessagesCollectionViewAvatarSizeDefault, height:kJSQMessagesCollectionViewAvatarSizeDefault )
         
-//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.jsq_defaultTypingIndicator(), style: .plain, target: self, action: #selector(receiveMessagePressed))
-        
         automaticallyScrollsToMostRecentMessage = true
         
         self.collectionView?.reloadData()
         self.collectionView?.layoutIfNeeded()
     }
-
-    // NARK: TEST - Remove it
-    /*
-    func receiveMessagePressed(_ sender: UIBarButtonItem) {
-        /**
-         *  DEMO ONLY
-         *
-         *  The following is simply to simulate received messages for the demo.
-         *  Do not actually do this.
-         */
-        
-        /**
-         *  Show the typing indicator to be shown
-         */
-        self.showTypingIndicator = !self.showTypingIndicator
-        
-        /**
-         *  Scroll to actually view the indicator
-         */
-        self.scrollToBottom(animated: true)
-        
-        /**
-         *  Copy last sent message, this will be the new "received" message
-         */
-        var copyMessage = self.messages.last?.copy()
-        
-        if (copyMessage == nil) {
-            copyMessage = JSQMessage(senderId: Avatar.AIChatBot, displayName: getName("AIChatBot"), text: "First received!")
-        }
-        
-        var newMessage:JSQMessage!
-        var newMediaData:JSQMessageMediaData!
-        var newMediaAttachmentCopy:AnyObject?
-        
-        if (copyMessage! as AnyObject).isMediaMessage() {
-            /**
-             *  Last message was a media message
-             */
-            let copyMediaData = (copyMessage! as AnyObject).media
-            
-            switch copyMediaData {
-            case is JSQPhotoMediaItem:
-                let photoItemCopy = (copyMediaData as! JSQPhotoMediaItem).copy() as! JSQPhotoMediaItem
-                photoItemCopy.appliesMediaViewMaskAsOutgoing = false
-                
-                newMediaAttachmentCopy = UIImage(cgImage: photoItemCopy.image!.cgImage!)
-                
-                /**
-                 *  Set image to nil to simulate "downloading" the image
-                 *  and show the placeholder view5017
-                 */
-                photoItemCopy.image = nil;
-                
-                newMediaData = photoItemCopy
-            case is JSQLocationMediaItem:
-                let locationItemCopy = (copyMediaData as! JSQLocationMediaItem).copy() as! JSQLocationMediaItem
-                locationItemCopy.appliesMediaViewMaskAsOutgoing = false
-                newMediaAttachmentCopy = locationItemCopy.location!.copy() as AnyObject?
-                
-                /**
-                 *  Set location to nil to simulate "downloading" the location data
-                 */
-                locationItemCopy.location = nil;
-                
-                newMediaData = locationItemCopy;
-            case is JSQVideoMediaItem:
-                let videoItemCopy = (copyMediaData as! JSQVideoMediaItem).copy() as! JSQVideoMediaItem
-                videoItemCopy.appliesMediaViewMaskAsOutgoing = false
-                newMediaAttachmentCopy = (videoItemCopy.fileURL! as NSURL).copy() as AnyObject?
-                
-                /**
-                 *  Reset video item to simulate "downloading" the video
-                 */
-                videoItemCopy.fileURL = nil;
-                videoItemCopy.isReadyToPlay = false;
-                
-                newMediaData = videoItemCopy;
-            case is JSQAudioMediaItem:
-                let audioItemCopy = (copyMediaData as! JSQAudioMediaItem).copy() as! JSQAudioMediaItem
-                audioItemCopy.appliesMediaViewMaskAsOutgoing = false
-                newMediaAttachmentCopy = (audioItemCopy.audioData! as NSData).copy() as AnyObject?
-                
-                /**
-                 *  Reset audio item to simulate "downloading" the audio
-                 */
-                audioItemCopy.audioData = nil;
-                
-                newMediaData = audioItemCopy;
-            default:
-                assertionFailure("Error: This Media type was not recognised")
-            }
-            
-            newMessage = JSQMessage(senderId: AvatarIdJobs, displayName: getName(User.Jobs), media: newMediaData)
-        }
-        else {
-            /**
-             *  Last message was a text message
-             */
-            
-            newMessage = JSQMessage(senderId: AvatarIdJobs, displayName: getName(User.Jobs), text: (copyMessage! as AnyObject).text)
-        }
-        
-        /**
-         *  Upon receiving a message, you should:
-         *
-         *  1. Play sound (optional)
-         *  2. Add new JSQMessageData object to your data source
-         *  3. Call `finishReceivingMessage`
-         */
-        
-        self.messages.append(newMessage)
-        self.finishReceivingMessage(animated: true)
-    }
- */
     
-    
-    // MARK: JSQMessagesViewController
-    
+    // MARK: JSQMessagesViewController Override
     override func didPressSend(_ button: UIButton, withMessageText text: String, senderId: String, senderDisplayName: String, date: Date) {
         let message = JSQMessage(senderId: senderId, senderDisplayName: senderDisplayName, date: date, text: text)
+        
+        //
         self.messages.append(message)
         self.finishSendingMessage(animated: true)
     }
     
-    //MARK: JSQMessages CollectionView DataSource
-    
+    // MARK: JSQMessagesCollectionViewDataSource
     override func senderId() -> String {
         return "309-41802-93823"
     }
@@ -186,7 +69,7 @@ class ViewController: JSQMessagesViewController {
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView, avatarImageDataForItemAt indexPath: IndexPath) -> JSQMessageAvatarImageDataSource? {
         let message = messages[(indexPath as NSIndexPath).item]
-        return JSQMessagesAvatarImageFactory().avatarImage(withUserInitials: "SW", backgroundColor: UIColor.jsq_messageBubbleGreen(), textColor: UIColor.white, font: UIFont.systemFont(ofSize: 12))
+        return JSQMessagesAvatarImageFactory().avatarImage(withUserInitials: "NK", backgroundColor: UIColor.jsq_messageBubbleGreen(), textColor: UIColor.white, font: UIFont.systemFont(ofSize: 12))
     }
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView, attributedTextForCellTopLabelAt indexPath: IndexPath) -> NSAttributedString? {
@@ -244,7 +127,6 @@ class ViewController: JSQMessagesViewController {
     }
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout, heightForMessageBubbleTopLabelAt indexPath: IndexPath) -> CGFloat {
-        
         /**
          *  Example on showing or removing senderDisplayName based on user settings.
          *  This logic should be consistent with what you return from `attributedTextForCellTopLabelAtIndexPath:`
