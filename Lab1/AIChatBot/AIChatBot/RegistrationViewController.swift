@@ -38,10 +38,11 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: UITextFieldDelegate
     
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        return true
-//    }
-//    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     // MARK: Support Methods
     
     func isEmptyTextField(tf: UITextField) -> Bool {
