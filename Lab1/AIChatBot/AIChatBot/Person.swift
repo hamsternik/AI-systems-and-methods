@@ -8,6 +8,18 @@
 
 import UIKit
 
-class Person: NSObject {
+class Person {
 
+    internal var name: String?
+    internal var surname: String?
+    
+    required init(name: String?, surname: String?) {
+        self.name = name
+        self.surname = surname
+    }
+    
+    convenience init() {
+        self.init(name: "", surname: "")
+    }
+    
 }

@@ -1,26 +1,112 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u2r-xM-Ni5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="wWA-iD-gdp">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="u2r-xM-Ni5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d5K-mi-0QF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iPr-m6-D1G" kind="relationship" relationship="rootViewController" id="WEy-Ng-2xn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lz0-pT-5Pe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-582" y="74"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="KAR-UV-Tpq">
+            <objects>
+                <viewController id="iPr-m6-D1G" customClass="RegistrationViewController" customModule="AIChatBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yTC-a1-TjD"/>
+                        <viewControllerLayoutGuide type="bottom" id="kEI-hb-bHm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AgV-GW-gs3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient-background" translatesAutoresizingMaskIntoConstraints="NO" id="Oj5-3h-xt3" userLabel="Background Image View"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lGx-8W-Hm9" userLabel="Name Text Field">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="nameEditingDidEnd:" destination="iPr-m6-D1G" eventType="editingDidEnd" id="zjx-19-VOR"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uu6-S5-YQC" userLabel="Surname Text Field">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="surnameEditingDidEnd:" destination="iPr-m6-D1G" eventType="editingDidEnd" id="8Kg-zW-sTX"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVj-Fi-mDi" userLabel="REGISTER Button">
+                                <color key="backgroundColor" red="0.34171681699167933" green="0.22247025286240918" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.48627450980392156" green="0.84705882352941175" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerPerson:" destination="iPr-m6-D1G" eventType="touchUpInside" id="FYl-3D-0AK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to AIChatBot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDu-4i-Pfl" userLabel="Welcome to AIChatBot Label">
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-XN-4Qw" userLabel="Registration Label">
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SHg-XN-4Qw" firstAttribute="centerX" secondItem="AgV-GW-gs3" secondAttribute="centerX" id="22x-oe-kSJ"/>
+                            <constraint firstItem="SHg-XN-4Qw" firstAttribute="top" secondItem="fDu-4i-Pfl" secondAttribute="bottom" constant="15" id="8xq-vv-ard"/>
+                            <constraint firstItem="Oj5-3h-xt3" firstAttribute="leading" secondItem="AgV-GW-gs3" secondAttribute="leading" id="BgC-qf-bZR"/>
+                            <constraint firstItem="fDu-4i-Pfl" firstAttribute="centerX" secondItem="AgV-GW-gs3" secondAttribute="centerX" id="Mra-af-Ifv"/>
+                            <constraint firstAttribute="trailing" secondItem="lGx-8W-Hm9" secondAttribute="trailing" constant="25" id="PpP-mC-FG6"/>
+                            <constraint firstAttribute="trailing" secondItem="uu6-S5-YQC" secondAttribute="trailing" constant="25" id="RyK-8n-YIj"/>
+                            <constraint firstItem="lGx-8W-Hm9" firstAttribute="leading" secondItem="AgV-GW-gs3" secondAttribute="leading" constant="15" id="Z0C-eb-z22"/>
+                            <constraint firstItem="fDu-4i-Pfl" firstAttribute="top" secondItem="yTC-a1-TjD" secondAttribute="bottom" constant="100" id="bYe-XZ-vHB"/>
+                            <constraint firstItem="uVj-Fi-mDi" firstAttribute="leading" secondItem="AgV-GW-gs3" secondAttribute="leading" id="cT3-CY-3yP"/>
+                            <constraint firstItem="uu6-S5-YQC" firstAttribute="leading" secondItem="AgV-GW-gs3" secondAttribute="leading" constant="15" id="gl5-jn-JSp"/>
+                            <constraint firstItem="kEI-hb-bHm" firstAttribute="top" secondItem="uVj-Fi-mDi" secondAttribute="bottom" id="hra-kB-5Q8"/>
+                            <constraint firstItem="lGx-8W-Hm9" firstAttribute="top" secondItem="SHg-XN-4Qw" secondAttribute="bottom" constant="100" id="ihB-fi-2nN"/>
+                            <constraint firstItem="uVj-Fi-mDi" firstAttribute="height" secondItem="Oj5-3h-xt3" secondAttribute="height" multiplier="0.08" id="lUI-kL-QU3"/>
+                            <constraint firstAttribute="trailing" secondItem="uVj-Fi-mDi" secondAttribute="trailing" id="nVJ-v1-UaE"/>
+                            <constraint firstItem="Oj5-3h-xt3" firstAttribute="top" secondItem="yTC-a1-TjD" secondAttribute="bottom" id="o6y-Rq-C1M"/>
+                            <constraint firstItem="uu6-S5-YQC" firstAttribute="top" secondItem="lGx-8W-Hm9" secondAttribute="bottom" constant="15" id="ojZ-WK-ein"/>
+                            <constraint firstItem="kEI-hb-bHm" firstAttribute="top" secondItem="Oj5-3h-xt3" secondAttribute="bottom" id="op6-8p-7ji"/>
+                            <constraint firstAttribute="trailing" secondItem="Oj5-3h-xt3" secondAttribute="trailing" id="s7d-IL-bcr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1rJ-Dy-3oV"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="lGx-8W-Hm9" id="I1g-lN-hJJ"/>
+                        <outlet property="surnameTextField" destination="uu6-S5-YQC" id="4xu-CM-KT5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MdV-5G-eGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.80000000000001" y="72.413793103448285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gradient-background" width="960" height="540"/>
+    </resources>
 </document>

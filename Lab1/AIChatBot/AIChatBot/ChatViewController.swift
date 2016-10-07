@@ -14,7 +14,7 @@ enum Avatar {
     case User
 }
 
-class ViewController: JSQMessagesViewController {
+class ChatViewController:  JSQMessagesViewController {
 
     var messages = [JSQMessage]()
     var incomingBubble: JSQMessagesBubbleImage!
