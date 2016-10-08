@@ -64,8 +64,6 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         self.person?.surname = tf.text
     }
     
-    
-    
     @IBAction func registerPerson(_ sender: AnyObject) {
         if !isEmptyTextField(tf: self.nameTextField) && !isEmptyTextField(tf: self.surnameTextField) {
             let chatViewController = ChatViewController()

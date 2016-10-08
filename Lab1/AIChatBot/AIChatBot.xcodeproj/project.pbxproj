@@ -13,6 +13,7 @@
 		620F46D81D9EEB72008D74E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620F46D61D9EEB72008D74E7 /* LaunchScreen.storyboard */; };
 		620F46E11D9F2078008D74E7 /* MessageDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F46E01D9F2078008D74E7 /* MessageDB.swift */; };
 		622833341DA5F81D0015D6A2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622833331DA5F81D0015D6A2 /* Person.swift */; };
+		622E76C31DA87EB20037685F /* Integer+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E76C21DA87EB20037685F /* Integer+Operators.swift */; };
 		623355A51DA5CD0600F63B95 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623355A41DA5CD0600F63B95 /* RegistrationViewController.swift */; };
 		623355AA1DA5D03600F63B95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623355A91DA5D03600F63B95 /* Assets.xcassets */; };
 		B93293E1260FDC2614C0329A /* Pods_AIChatBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F6BF08C36558937E767DA5 /* Pods_AIChatBot.framework */; };
@@ -28,6 +29,7 @@
 		620F46D91D9EEB72008D74E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		620F46E01D9F2078008D74E7 /* MessageDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDB.swift; sourceTree = "<group>"; };
 		622833331DA5F81D0015D6A2 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		622E76C21DA87EB20037685F /* Integer+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Integer+Operators.swift"; sourceTree = "<group>"; };
 		623355A41DA5CD0600F63B95 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		623355A91DA5D03600F63B95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		8E07AB656383934F52225605 /* Pods-AIChatBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIChatBot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AIChatBot/Pods-AIChatBot.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		622E76C41DA87F9E0037685F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				622E76C21DA87EB20037685F /* Integer+Operators.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		623355A61DA5CDA900F63B95 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +127,7 @@
 				620F46CD1D9EEB72008D74E7 /* AppDelegate.swift */,
 				623355A61DA5CDA900F63B95 /* ViewControllers */,
 				623355A71DA5CDB300F63B95 /* Models */,
+				622E76C41DA87F9E0037685F /* Helpers */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -257,6 +268,7 @@
 				620F46D01D9EEB72008D74E7 /* ChatViewController.swift in Sources */,
 				620F46CE1D9EEB72008D74E7 /* AppDelegate.swift in Sources */,
 				623355A51DA5CD0600F63B95 /* RegistrationViewController.swift in Sources */,
+				622E76C31DA87EB20037685F /* Integer+Operators.swift in Sources */,
 				620F46E11D9F2078008D74E7 /* MessageDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,7 +396,7 @@
 				DEVELOPMENT_TEAM = C5B4S79D6V;
 				INFOPLIST_FILE = AIChatBot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nuvogroup.AIChatBot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamsternik.AIChatBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -398,7 +410,7 @@
 				DEVELOPMENT_TEAM = C5B4S79D6V;
 				INFOPLIST_FILE = AIChatBot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nuvogroup.AIChatBot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamsternik.AIChatBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

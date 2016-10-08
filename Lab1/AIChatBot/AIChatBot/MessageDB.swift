@@ -9,13 +9,16 @@
 import UIKit
 import JSQMessagesViewController
 
+public let emptyMessage = ""
+
 public let chatBotID = "chatBotID"
 public let chatBotName = "Лиза"
 public let chatBotInitial = "Л"
 
-//public let messageAboutName = JSQMessage(senderId: chatBotID, displayName: chatBotName, text: String("Привет, я " + chatBotName + ". Я интеллектуальная система, созданная для общения с людьми."))
 public let messageAboutName = JSQMessage(senderId: chatBotID, displayName: chatBotName, text: String("Привет, я " + chatBotName + "."))
 public let messageAboutAge = JSQMessage(senderId: chatBotID, displayName: chatBotName, text: String("Какой твой возраст? Введи лишь число!"))
+public let repeatMessageAboutAge = JSQMessage(senderId: chatBotID, displayName: chatBotName, text: String("Прости, не совсем поняла тебя. Введи, пожалуйста, только число."))
+public let exitMessage = JSQMessage(senderId: chatBotID, displayName: chatBotName, text: String("Отправь любое сообщение для выхода из приложения."))
 
 // 0-5
 public let messageChild1 = JSQMessage(senderId: chatBotID, displayName: chatBotName, text: String("Ух ничего себе, совсем маленький! Чем ты увлекаешься?"))
@@ -52,7 +55,7 @@ public let messageOld3 = JSQMessage(senderId: chatBotID, displayName: chatBotNam
 public let messageOld4 = JSQMessage(senderId: chatBotID, displayName: chatBotName, text: String("Есть ли у тебя хобби?"))
 public let messageOld5 = JSQMessage(senderId: chatBotID, displayName: chatBotName, text: String("Извини, но мне пора. До встречи!"))
 
-// 66-100
+// 66-99
 public let messageOldest1 = JSQMessage(senderId: chatBotID, displayName: chatBotName, text: String("Ого, ничего себе! Ты, наверно, очень многое повидал в жизни! Чем ты занимаешься сейчас?"))
 public let messageOldest2 = JSQMessage(senderId: chatBotID, displayName: chatBotName, text: String("Я так понимаю, ты сейчас не работаешь?"))
 public let messageOldest3 = JSQMessage(senderId: chatBotID, displayName: chatBotName, text: String("Ой прости, что так неловко выходит, но мне нужно идти. Пока!"))

@@ -32,7 +32,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kEI-hb-bHm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AgV-GW-gs3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient-background" translatesAutoresizingMaskIntoConstraints="NO" id="Oj5-3h-xt3" userLabel="Background Image View"/>
@@ -76,12 +76,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SHg-XN-4Qw" firstAttribute="centerX" secondItem="AgV-GW-gs3" secondAttribute="centerX" id="22x-oe-kSJ"/>
+                            <constraint firstItem="uu6-S5-YQC" firstAttribute="height" secondItem="Oj5-3h-xt3" secondAttribute="height" multiplier="0.06" constant="1" id="3Jj-Rd-5bO"/>
                             <constraint firstItem="SHg-XN-4Qw" firstAttribute="top" secondItem="fDu-4i-Pfl" secondAttribute="bottom" constant="15" id="8xq-vv-ard"/>
                             <constraint firstItem="Oj5-3h-xt3" firstAttribute="leading" secondItem="AgV-GW-gs3" secondAttribute="leading" id="BgC-qf-bZR"/>
                             <constraint firstItem="fDu-4i-Pfl" firstAttribute="centerX" secondItem="AgV-GW-gs3" secondAttribute="centerX" id="Mra-af-Ifv"/>
                             <constraint firstAttribute="trailing" secondItem="lGx-8W-Hm9" secondAttribute="trailing" constant="25" id="PpP-mC-FG6"/>
                             <constraint firstAttribute="trailing" secondItem="uu6-S5-YQC" secondAttribute="trailing" constant="25" id="RyK-8n-YIj"/>
                             <constraint firstItem="lGx-8W-Hm9" firstAttribute="leading" secondItem="AgV-GW-gs3" secondAttribute="leading" constant="15" id="Z0C-eb-z22"/>
+                            <constraint firstItem="lGx-8W-Hm9" firstAttribute="height" secondItem="Oj5-3h-xt3" secondAttribute="height" multiplier="0.06" id="aXs-cC-cMO"/>
                             <constraint firstItem="fDu-4i-Pfl" firstAttribute="top" secondItem="yTC-a1-TjD" secondAttribute="bottom" constant="100" id="bYe-XZ-vHB"/>
                             <constraint firstItem="uVj-Fi-mDi" firstAttribute="leading" secondItem="AgV-GW-gs3" secondAttribute="leading" id="cT3-CY-3yP"/>
                             <constraint firstItem="uu6-S5-YQC" firstAttribute="leading" secondItem="AgV-GW-gs3" secondAttribute="leading" constant="15" id="gl5-jn-JSp"/>
