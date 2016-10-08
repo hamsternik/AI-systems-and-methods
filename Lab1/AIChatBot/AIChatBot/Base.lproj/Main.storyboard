@@ -32,7 +32,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kEI-hb-bHm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AgV-GW-gs3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient-background" translatesAutoresizingMaskIntoConstraints="NO" id="Oj5-3h-xt3" userLabel="Background Image View"/>
@@ -41,7 +41,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
-                                    <action selector="nameEditingDidEnd:" destination="iPr-m6-D1G" eventType="editingDidEnd" id="zjx-19-VOR"/>
+                                    <action selector="nameEditingDidEnd:" destination="iPr-m6-D1G" eventType="editingChanged" id="uzV-Ca-FE0"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uu6-S5-YQC" userLabel="Surname Text Field">
@@ -49,7 +49,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="surnameEditingDidEnd:" destination="iPr-m6-D1G" eventType="editingDidEnd" id="8Kg-zW-sTX"/>
+                                    <action selector="surnameEditingDidEnd:" destination="iPr-m6-D1G" eventType="editingChanged" id="1s0-UU-WUq"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVj-Fi-mDi" userLabel="REGISTER Button">
